@@ -1,5 +1,7 @@
 # Undercover Agent
 
+[![PyPI](https://img.shields.io/pypi/v/undercover-agent.svg)](https://pypi.org/project/undercover-agent/)
+
 A drop-in **OpenAI-compatible chat completions server** that sits between a coding
 harness (GitHub Copilot, OpenCode, or anything that speaks the OpenAI API) and a
 real model — and **logs everything** that flows through it.
