@@ -62,6 +62,8 @@ python -m undercover_agent
 
 Then point your harness at `http://localhost:8000/v1`.
 
+A GUI is provided at `http://localhost:8000/` to view the logs live.
+
 ### MITM mode
 
 ```bash
@@ -120,6 +122,4 @@ Writes `reports/index.html` plus one `reports/<session-id>.html` per session. Op
 ## How it's built
 
 - **Flask** for the HTTP server (streaming via generator responses).
-- **openai** — the official SDK, used to forward requests upstream in MITM mode.
-
-Entrypoint is `python -m undercover_agent`.
+- **httpx** for the HTTP client (MITM mode).
